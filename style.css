@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Raleway:wght@300;400;600;800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    background: rgb(17, 17, 17);
+    color: #fff;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+h1
+{
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+.input-box
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input 
+{
+    margin: .55rem 0;
+    border-radius: 3px;
+    border: none;
+    padding: .95rem 3rem;
+
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.container-flexbox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Buttons */
+.container-btn
+{
+   margin: 2rem 0;
+}
+
+
+
+#getData, #getList, #submitForm
+{
+    border-radius: 3px;
+    border: none;
+    padding: .95rem 3rem;
+    margin: 0 1rem;
+
+    background: rgb(55, 92, 255);
+    color: white;
+    transition: .20s;
+
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.25rem;
+}
+
+#getList:hover
+{
+    background: rgb(57, 136, 255);
+}
+
+#getData:hover
+{
+    background: rgb(57, 136, 255);
+}
+
+#submitForm:hover
+{
+    background: rgb(57, 136, 255);
+}

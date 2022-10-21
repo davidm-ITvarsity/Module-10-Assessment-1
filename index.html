@@ -1,44 +1,39 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Fetch App | David Moodley</title>
+</head>
+<body>
+    <h1>Fetch App</h1>
 
-    <style>
-
-body{
-    background-color: rgba(103, 117, 117, 0.911);
-    padding: 100px;
-    margin: 100px;
-    font-family:Impact, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    margin: 14px;
-}
-#submitForm{
-    color:rgb(9, 187, 27);
-    font-size: 2vw;
-
-}
-
-    </style>
-
-    <body>
-        <button id="getData">Get data</button>
-        <button id="getList">Get list</button>
-        <br><br>
-
-        <form id = "myForm">
-            <input type="text" name="firstname" id="firstname" value="Firstname"/>
-            <input type="text" name="lastname" id="lastname" value="Lastname"/>
-            <br><br>
-            <button id="submitForm">Submit</button>
+    <div class="container-flexbox">
+        
+        <form id="myForm">
+            <div class="input-box">
+                <input type="text" name="firstname" id="firstname" value="Firstname"/>
+                <input type="text" name="lastname" id="lastname" value="Lastname"/>
+            </div>
         </form>
+
+        <div class="container-btn">
+            <button id="getData">Get data</button>
+            <button id="getList">Get list</button>
+            <button id="submitForm">Submit</button>
+        </div>
 
         <p id="post"></p>
         <p id="message"></p>
         <p id="greeting"></p>
+    </div>
 
-        <script>
+
+    <script>
             document.getElementById("getData").addEventListener('click',getData);
             document.getElementById("getList").addEventListener('click',getList);
             document.getElementById("submitForm").addEventListener('click',submitForm);
@@ -93,7 +88,7 @@ body{
                     document.getElementById("greeting").innerHTML = data;
                 })
             }
-            
-        </script>
-    </body>
+        
+    </script>
+</body>
 </html>
